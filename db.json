@@ -1,0 +1,77 @@
+{
+  "robots": [
+    { "id": 1, 
+      "imagem": "http://localhost:3001/static/media/robot1.1c0bd3ba.png",
+      "name": "Securyti Robot",
+      "description": "Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-highheat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until",
+      "risco": 1},
+      { "id": 1, 
+        "imagem": "http://localhost:3001/static/media/robot2.4cdf2567.png",
+        "name": "Magic Robot",
+        "description": "Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-highheat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until",
+        "risco": 2},
+        { "id": 1, 
+          "imagem": "http://localhost:3001/static/media/robot3.eb59b2eb.png",
+          "name": "HIGHTGROWDOWN ROBOT",
+          "description": "Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-highheat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until",
+          "risco": 3}
+  ],
+  "coins": [
+    { "id": 1, 
+      "imagem": "ethLogo",
+      "name": "ETH",
+      "value": 100
+    },
+    { "id": 1, 
+      "imagem": "http://localhost:3001/static/media/robot1.1c0bd3ba.png",
+      "name": "BTC",
+      "value": 100
+    },
+    { "id": 1, 
+      "imagem": "http://localhost:3001/static/media/robot1.1c0bd3ba.png",
+      "name": "BUSD",
+      "value": 100
+    }
+  ],
+  "GraphicOperation":[ {
+    "data": "30/08/2021",
+    "amt": 400,
+    "status": "Comprando"
+
+  },
+  {
+    "data": "31/08/2021",
+    "amt": 900,
+    "status": "Comprando"
+
+  },
+  {
+  "data": "01/09/2021",
+  "amt": 400,
+  "status": "Comprando"
+
+  },
+  {
+    "data": "02/09/2021",
+    "amt": 400,
+    "status": "Comprando"
+
+  },
+  {
+    "data": "03/09/2021",
+    "amt": 1400,
+    "status": "Comprando"
+  },
+  {
+    "data": "04/09/2021",
+    "amt": 400,
+    "status": "Comprando"
+
+  },
+  {
+    "data": "05/09/2021",
+    "amt": 400,
+    "status": "Comprando"
+  }
+]
+}

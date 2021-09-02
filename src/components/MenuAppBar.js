@@ -34,10 +34,10 @@ export default function HeaderApp() {
                         <Link to="/singUp"  className={classes.link}>
                             REGISTE
                         </Link>
-                        <Link to="/singUp" underlineNone className={classes.link} >
+                        <Link to="/singIn" underlineNone className={classes.link} >
                             LOGIN
                         </Link>
-                        <Link to="/singUp" className={classes.link} >
+                        <Link to="/contactUs" className={classes.link} >
                             CONTACT US
                         </Link>
                     </Typography>
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
         width: '50%',
     },
     link:{
-        color: "#ffffff",
+        color: "#D4AF37",
         margin: "5%",
         textDecoration: 'none'
     },

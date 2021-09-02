@@ -22,6 +22,9 @@ import { Box, Button } from '@material-ui/core';
 import MenuAppBar from '../MenuAppBar';
 import FooterApp from '../FooterApp';
 
+function license(id){
+    console.log(id)
+}
 
 export default function EstrategyPage() {
     const classes = useStyles();
@@ -79,7 +82,7 @@ function BtcStrategyOne(classes) {
             </p>
             <img src={walletIcon} alt="" className={classes.iconClasses} />
             <div className={classes.button}>
-                <Button variant="outlined" >
+                <Button variant="outlined" onClick={license} >
                     License
                 </Button>
             </div>

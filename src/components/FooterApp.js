@@ -10,16 +10,18 @@ export default function FooterApp() {
     return (
         <>
             <Box mt={8}>
+            <Link className={classes.link} to="/">
                 <div className={classes.root} >
                     <p align="center">
                         {'Copyright © '}
-                        <Link className={classes.link} to="/">
-                            cryptoBot
-                        </Link>{' '}
+                        
+                            GrowYourCrypto
+                        {' '}
                         {new Date().getFullYear()}
                         {'.'}
                     </p>
                 </div>
+                </Link>
             </Box>
         </>
     );
@@ -28,10 +30,10 @@ export default function FooterApp() {
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: "#263238",
-        color: "#993399",
+        color: "#D4AF37",
     },
     link: {
-        color: "#000000",
+        color: "#D4AF37",
         textDecoration: 'none'
     }
 }));

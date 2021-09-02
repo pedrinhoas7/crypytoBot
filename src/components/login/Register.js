@@ -43,7 +43,8 @@ const useStyles = makeStyles((theme) => ({
         color: "#ff0000"
     },
     link:{
-        margin : 10
+        margin : 10,
+        color: "#124284"
     }
 
 
@@ -79,7 +80,7 @@ export default function Register() {
     function handleChangePassword(e) {
         let value = e.target.value
         if (validator.isStrongPassword(value)) {
-            setPassword(CryptoJS.MD5(value).toString(CryptoJS.enc.Base64)) 
+            setPassword(value) 
         }else {
             setMsgError("Password não coencidem")
         }
@@ -87,7 +88,7 @@ export default function Register() {
 
     function handleChangePasswordConfirm(e) {
         let value = e.target.value
-        setPasswordConfirm(CryptoJS.MD5(value).toString(CryptoJS.enc.Base64))
+        setPasswordConfirm(value)
     }
 
     function submitForm(e) {
@@ -112,7 +113,7 @@ export default function Register() {
         <Container className={classes.root} component="main" maxWidth="xs">
             <div className={classes.paper}>
                 <img className={classes.img} src={logo} alt={'logo'} />
-                <Typography variant="h4" color="#993399">
+                <Typography variant="h4" color="#124284">
                     Crypto Bot
                 </Typography>
                 <form onSubmit={submitForm} noValidate>
@@ -166,21 +167,21 @@ export default function Register() {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color="secondary"
+                        color="primary"
                         className={classes.button}
                     >
                         Sign In
                     </Button>
                     <Grid className={classes.link} >
-                        <Grid item>
+                        <Grid item xs>
                             <Link className={classes.link} href="/singIn" variant="body2"
-                                color="#993399">
+                                color="#124284">
                                 {"Login"}
                             </Link>
                         </Grid>
                         <Grid item xs>
                             <Link className={classes.link} href="/forgotPassword" variant="body2"
-                                color="#993399">
+                                color="#124284">
                                 Forgot password?
                             </Link>
                         </Grid>

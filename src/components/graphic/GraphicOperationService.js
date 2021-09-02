@@ -41,6 +41,15 @@ export class GraphicOperationService extends React.Component {
         }
     }
 
+    async getStrategy() {
+        try {
+            const res = await api.get(`/strategy`);
+            return await res.data   
+        } catch (error) {
+            throw error;
+        }
+    }
+
     /* async deleteVenda(id) {
         try {
 

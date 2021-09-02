@@ -1,16 +1,14 @@
 import Tooltip from 'material-ui/internal/Tooltip';
 import { MuiThemeProvider } from 'material-ui/styles';
-import { useState } from 'react';
 import { CartesianGrid, XAxis, YAxis, BarChart, Bar, Legend } from 'recharts';
-import GraphicOperationService from './GraphicOperationService';
 
 
 
 export default function GraphicOperation(props) {
-    console.log(props.data)
+    console.log(props)
     return (
         <MuiThemeProvider>
-            <BarChart width={730} height={250} data={props.data}>
+                <BarChart width={1200} height={300} data={props.data}>
                 <CartesianGrid strokeDasharray="4 1" />
                 <XAxis dataKey="data" />
                 <YAxis />

@@ -12,6 +12,7 @@ import validator from 'validator';
 import logo from '../../assets/images/logo.png'
 import { makeStyles } from '@material-ui/styles';
 import FooterApp from '../FooterApp';
+import LoginService from './LoginService';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -41,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Login() {
     const classes = useStyles();
+    const [user, setUser] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [msgErrorEmail, setMsgErrorEmail] = useState("");
@@ -71,8 +73,12 @@ export default function Login() {
         console.log(email,password)
     }
 
-    function submitForm(e) {     
-        if(email === email & password === password){
+    async function submitForm(e) { 
+        const res = await LoginService.postLogin(email, password);
+        setUser(res)
+        console.log(user)    
+        
+       /*  if(email === email & password === password){
             localStorage.setItem('id', 1)
             localStorage.setItem('email', email)
             localStorage.setItem('name', 'name')
@@ -84,7 +90,7 @@ export default function Login() {
             localStorage.removeItem('name')
             localStorage.removeItem('token')
             setMsgError("Verique os dados")
-        }
+        } */
     }
 
     return (

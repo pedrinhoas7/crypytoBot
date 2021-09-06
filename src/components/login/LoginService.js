@@ -1,13 +1,19 @@
-const axios = require('axios');
+import React from 'react';
 
-const api = axios.create({
-    baseURL: "https://api.cobli.co",
-});
+import api from '../../api'
 
+export class LoginService extends React.Component {
+    
+    async postLogin(email, password) {
+        try {
+            const res = await api.post(`/login`,
+            {"email": email, "password": password});
+            return await res.data   
+        } catch (error) {
+            throw error;
+        }
+    }
 
-export default function loginService(data) {
-    api.get(`/robots`)
-      .then(res => {
-        return res
-      })
 }
+
+export default new LoginService();
